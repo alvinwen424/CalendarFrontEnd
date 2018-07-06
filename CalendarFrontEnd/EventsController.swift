@@ -13,7 +13,6 @@ class EventsController: UITableViewController {
     let array = ["event1", "event2", "event3"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
