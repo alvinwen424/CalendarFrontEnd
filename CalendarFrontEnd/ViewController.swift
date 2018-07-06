@@ -40,7 +40,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "eventcontroller"){
             let cell = sender as! CustomCell
-            let detailview = segue.destination as! EventControllerViewController
+            let detailview = segue.destination as! EventsController
         }
     }
 

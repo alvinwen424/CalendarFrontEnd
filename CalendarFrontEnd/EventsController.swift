@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EventControllerViewController: UITableViewController {
+class EventsController: UITableViewController {
 
     let array = ["event1", "event2", "event3"]
     override func viewDidLoad() {
@@ -38,6 +38,13 @@ class EventControllerViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "eventview"){
+            let cell = sender as! EventCellTableViewCell
+            let eventview = segue.destination as! EventViewController
+            eventview.details = cell.Event
+        }
+    }
 
     /*
     // MARK: - Navigation
