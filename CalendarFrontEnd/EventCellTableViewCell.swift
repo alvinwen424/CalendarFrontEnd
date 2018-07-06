@@ -10,7 +10,7 @@ import UIKit
 
 class EventCellTableViewCell: UITableViewCell {
 
-    var Event: String?
+    var event: Event?
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A48A957C20EF631D00E2ED10 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48A957B20EF631D00E2ED10 /* Event.swift */; };
+		A48A957E20EF634F00E2ED10 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48A957D20EF634F00E2ED10 /* EventManager.swift */; };
 		A4EA5E6920EEC74300303765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA5E6820EEC74300303765 /* AppDelegate.swift */; };
 		A4EA5E6B20EEC74300303765 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA5E6A20EEC74300303765 /* ViewController.swift */; };
 		A4EA5E6E20EEC74300303765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EA5E6C20EEC74300303765 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A48A957B20EF631D00E2ED10 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		A48A957D20EF634F00E2ED10 /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 		A4EA5E6520EEC74300303765 /* CalendarFrontEnd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarFrontEnd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EA5E6820EEC74300303765 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4EA5E6A20EEC74300303765 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				A4EA5EA420EF4F0300303765 /* EventViewController.swift */,
 				A4EA5E9E20EF389D00303765 /* EventCellTableViewCell.swift */,
 				A4EA5E9C20EF35B100303765 /* EventsController.swift */,
+				A48A957B20EF631D00E2ED10 /* Event.swift */,
+				A48A957D20EF634F00E2ED10 /* EventManager.swift */,
 				A4EA5E6C20EEC74300303765 /* Main.storyboard */,
 				A4EA5E6F20EEC74300303765 /* Assets.xcassets */,
 				A4EA5E7120EEC74300303765 /* LaunchScreen.storyboard */,
@@ -274,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48A957E20EF634F00E2ED10 /* EventManager.swift in Sources */,
+				A48A957C20EF631D00E2ED10 /* Event.swift in Sources */,
 				A4EA5E6B20EEC74300303765 /* ViewController.swift in Sources */,
 				A4EA5E9B20EF286500303765 /* CustomCell.swift in Sources */,
 				A4EA5EA520EF4F0300303765 /* EventViewController.swift in Sources */,

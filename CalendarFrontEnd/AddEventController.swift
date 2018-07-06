@@ -10,7 +10,6 @@ import UIKit
 
 class AddEventController: UIViewController {
 
-    
     @IBOutlet weak var eventContent: UITextView!
     @IBOutlet weak var eventEndTime: UITextField!
     @IBOutlet weak var eventStartTime: UITextField!
@@ -20,13 +19,20 @@ class AddEventController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    @IBAction func AddClick(_ sender: AnyObject) {
+        EventManager.AddEvent(name: eventNameText.text!, content: eventContent.text, startTime: eventStartTime.text!, endTime: eventEndTime.text!)
+        eventEndTime.text = ""
+        eventStartTime.text = ""
+        eventContent.text = ""
+        eventNameText.text = ""
+    }
+    
     /*
     // MARK: - Navigation
 

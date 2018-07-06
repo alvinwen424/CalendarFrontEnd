@@ -10,7 +10,7 @@ import UIKit
 
 class EventViewController: UIViewController {
 
-    var details: String?
+    var details: Event?
     @IBOutlet weak var eventContent: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,13 @@ class EventViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.title = details
+        self.title = details?.name
+        self.eventContent.text = """
+        Name of event: \(String(describing: details?.name))
+        start Time: \(String(describing: details?.startTime))
+        end Time: \(String(describing: details?.endTime))
+        content: \(String(describing: details?.content))
+        """
     }
 
     override func didReceiveMemoryWarning() {

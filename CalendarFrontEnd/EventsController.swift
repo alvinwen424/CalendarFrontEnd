@@ -17,24 +17,30 @@ class EventsController: UITableViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.reloadData()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return array.count
+        return EventManager.events.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "eventcell") as! EventCellTableViewCell
-        cell.textLabel?.text = array[indexPath.item]
+        let event = EventManager.events[indexPath.item]
+        cell.textLabel?.text = event.name
         if(indexPath.item % 2 == 0){
             cell.backgroundColor = UIColor.gray.withAlphaComponent(0.2)
         }else{
             cell.backgroundColor = UIColor.white.withAlphaComponent(0.2)
         }
-        cell.Event = cell.textLabel?.text
+        cell.event = event
         return cell
     }
     
@@ -42,7 +48,7 @@ class EventsController: UITableViewController {
         if(segue.identifier == "eventview"){
             let cell = sender as! EventCellTableViewCell
             let eventview = segue.destination as! EventViewController
-            eventview.details = cell.Event
+            eventview.details = cell.event
         }
     }
 

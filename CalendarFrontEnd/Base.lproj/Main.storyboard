@@ -246,6 +246,9 @@
                                 <rect key="frame" x="83" y="604" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="AddClick:" destination="nSg-Dp-0g4" eventType="touchUpInside" id="xyb-fc-CwM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ko-5R-8kO">
                                 <rect key="frame" x="238" y="604" width="46" height="30"/>
@@ -264,9 +267,6 @@
                         <viewLayoutGuide key="safeArea" id="G1h-sd-3uV"/>
                     </view>
                     <connections>
-                        <outlet property="EventNameText" destination="WZU-Oy-q0M" id="SMN-8J-ph0"/>
-                        <outlet property="EventStartTime" destination="DX8-is-uet" id="icl-o3-K7a"/>
-                        <outlet property="add" destination="WZU-Oy-q0M" id="3WO-Qt-P5P"/>
                         <outlet property="eventContent" destination="odO-Ab-KoN" id="VYR-3p-t71"/>
                         <outlet property="eventEndTime" destination="LY1-10-B9z" id="Mnb-Oc-l7M"/>
                         <outlet property="eventNameText" destination="WZU-Oy-q0M" id="kIO-fe-RiW"/>
