@@ -134,6 +134,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="2Tl-qc-gJJ" kind="show" id="hCk-dO-3eJ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -141,6 +144,13 @@
                             <outlet property="delegate" destination="HiZ-f8-bSq" id="sxc-Jz-6wk"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="nNJ-x9-Hug">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2fJ-Pp-QJg">
+                            <connections>
+                                <segue destination="nSg-Dp-0g4" kind="show" id="tbx-BK-EKF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Prs-9Z-GaP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
