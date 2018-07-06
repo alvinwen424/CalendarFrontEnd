@@ -1,5 +1,5 @@
 //
-//  CustomCell.swift
+//  CollectionViewCell.swift
 //  CalendarFrontEnd
 //
 //  Created by alvin wen on 7/6/18.
@@ -8,8 +8,6 @@
 
 import UIKit
 
-class CustomCell: UICollectionViewCell {
-    
-    @IBOutlet weak var myLabel: UILabel!
+class CollectionViewCell: UICollectionViewCell {
     
 }

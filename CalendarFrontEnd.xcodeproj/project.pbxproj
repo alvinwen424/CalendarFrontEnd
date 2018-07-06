@@ -15,6 +15,8 @@
 		A4EA5E7E20EEC74300303765 /* CalendarFrontEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA5E7D20EEC74300303765 /* CalendarFrontEndTests.swift */; };
 		A4EA5E8920EEC74300303765 /* CalendarFrontEndUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA5E8820EEC74300303765 /* CalendarFrontEndUITests.swift */; };
 		A4EA5E9B20EF286500303765 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA5E9A20EF286500303765 /* CustomCell.swift */; };
+		A4EA5E9D20EF35B100303765 /* EventControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA5E9C20EF35B100303765 /* EventControllerViewController.swift */; };
+		A4EA5E9F20EF389D00303765 /* EventCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA5E9E20EF389D00303765 /* EventCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A4EA5E8820EEC74300303765 /* CalendarFrontEndUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarFrontEndUITests.swift; sourceTree = "<group>"; };
 		A4EA5E8A20EEC74300303765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4EA5E9A20EF286500303765 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomCell.swift; path = ../CustomCell.swift; sourceTree = "<group>"; };
+		A4EA5E9C20EF35B100303765 /* EventControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventControllerViewController.swift; sourceTree = "<group>"; };
+		A4EA5E9E20EF389D00303765 /* EventCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				A4EA5E6820EEC74300303765 /* AppDelegate.swift */,
 				A4EA5E6A20EEC74300303765 /* ViewController.swift */,
 				A4EA5E6C20EEC74300303765 /* Main.storyboard */,
+				A4EA5E9E20EF389D00303765 /* EventCellTableViewCell.swift */,
+				A4EA5E9C20EF35B100303765 /* EventControllerViewController.swift */,
 				A4EA5E6F20EEC74300303765 /* Assets.xcassets */,
 				A4EA5E7120EEC74300303765 /* LaunchScreen.storyboard */,
 				A4EA5E7420EEC74300303765 /* Info.plist */,
@@ -265,6 +271,8 @@
 				A4EA5E6B20EEC74300303765 /* ViewController.swift in Sources */,
 				A4EA5E9B20EF286500303765 /* CustomCell.swift in Sources */,
 				A4EA5E6920EEC74300303765 /* AppDelegate.swift in Sources */,
+				A4EA5E9D20EF35B100303765 /* EventControllerViewController.swift in Sources */,
+				A4EA5E9F20EF389D00303765 /* EventCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

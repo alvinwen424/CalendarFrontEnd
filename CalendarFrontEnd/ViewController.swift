@@ -36,6 +36,13 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "eventcontroller"){
+            let cell = sender as! CustomCell
+            let detailview = segue.destination as! EventControllerViewController
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
